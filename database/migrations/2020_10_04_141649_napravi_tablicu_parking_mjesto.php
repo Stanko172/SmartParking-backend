@@ -18,7 +18,7 @@ class NapraviTablicuParkingMjesto extends Migration
             $table->string('naziv', 50);
             $table->boolean('status')->default(false);
             // 1 - obicno pm, 2 - invalidsko pm
-            $table->$table->enum('vrsta', ['1', '2']);
+            $table->enum('vrsta', ['1', '2']);
             $table->unsignedBigInteger('parkiraliste_id');
             $table->unsignedBigInteger('sektor_id');
 

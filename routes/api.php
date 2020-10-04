@@ -45,3 +45,5 @@ Route::post('/login', function(Request $request){
    return response($response, 201);
    
 });
+
+Route::post('/register', 'UserRegisterController@register');

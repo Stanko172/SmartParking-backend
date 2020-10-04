@@ -76,3 +76,10 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Configuration for the project
+In the command prompt:<br>
+-Run 'composer install' to install all the dependencies <br>
+-Run 'php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"' to publish Sanctum configuration and migration files <br>
+-Run 'php artisan migrate' to run database migrations <br>
+-Run 'php artisan make:seeder UsersTableSeeder' for seeding  test user <br>

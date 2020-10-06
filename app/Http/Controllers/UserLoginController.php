@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 
+
 class UserLoginController extends Controller
 {
     public function login(Request $request){
@@ -13,7 +14,7 @@ class UserLoginController extends Controller
             'password' => 'required'
         ]);
 
-        $user = User::where('email', $request->email)->first();
+        $user = \App\User::where('email', $request->email)->first();
 
         if(!$user || !Hash::check($request->password, $user->password)){
             return response([

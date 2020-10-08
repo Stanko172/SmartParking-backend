@@ -17,7 +17,7 @@ class NapraviTablicuRezervacija extends Migration
             $table->id();
             $table->unsignedBigInteger('parking_mjesto_id');
             $table->unsignedBigInteger('vozac_id');
-            $table->float('cijena', 2, 2);
+            $table->float('cijena', 5, 2);
             $table->dateTime('vrijeme_rezervacije', 0);
 
             $table->foreign('parking_mjesto_id')->references('id')->on('parking_mjesto');

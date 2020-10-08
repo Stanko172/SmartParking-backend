@@ -16,9 +16,14 @@ class NapraviTablicuParkingMjesto extends Migration
         Schema::create('parking_mjesto', function (Blueprint $table) {
             $table->id();
             $table->string('naziv', 50);
-            $table->boolean('status')->default(false);
+
+            //$table->boolean('status')->default(false); - vratiti nakon tesnog seedera :)
+            $table->string('status', 50);
+
             // 1 - obicno pm, 2 - invalidsko pm
-            $table->enum('vrsta', ['1', '2']);
+            //$table->enum('vrsta', ['1', '2']); - vratiti nakon tesnog seedera :)
+            $table->string('vrsta', 50);
+            
             $table->unsignedBigInteger('parkiraliste_id');
             $table->unsignedBigInteger('sektor_id');
 

@@ -16,5 +16,13 @@ class DatabaseSeeder extends Seeder
         $this->call(OpcinaTableSeeder::class);
         $this->call(GradTableSeeder::class);
         $this->call(LokacijaTableSeeder::class);
+        $this->call(ProizvodacSeeder::class);
+        $this->call(ParkiralisteTableSeeder::class);
+        $this->call(AutoSeeder::class);
+        $this->call(SektorTableSeeder::class);
+        $this->call(Parking_mjestoTableSeeder::class);
+        $this->call(KarticaTableSeeder::class);
+        $this->call(VozacTableSeeder::class);
+        $this->call(RezervacijaTableSeeder::class);
     }
 }

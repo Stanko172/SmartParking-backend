@@ -18,7 +18,7 @@ class CreateKarticaTable extends Migration
             $table->char('broj', 16);
             $table->enum('vrsta', ['MasterCard', 'Visa']);
             $table->char('sigurnosniBroj', 3);
-            $table->char('datumIsteka', 4);
+            $table->char('datumIsteka', 5);
 
             $table->unsignedBigInteger('korisnikID');
 

@@ -20,7 +20,7 @@ class KarticaTableSeeder extends Seeder
                 'broj' => rand(1000000000000000,9999999999999999),
                 'vrsta' => $kartica[rand(0,1)],
                 'sigurnosniBroj' => rand(100,999),
-                'datumIsteka' => rand(0101, 9999),
+                'datumIsteka' => '' . rand(1, 12) . '/' . rand(20, 30),
                 'korisnikID' => rand(1, 20)
             ]);
         }

@@ -19,7 +19,7 @@ class CreateVozacTable extends Migration
             $table->unsignedBigInteger('korisnikID');
             $table->unsignedBigInteger('autoID');
 
-            $table->foreign('korisnikID')->references('id')->on('users');
+            $table->foreign('korisnikID')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('autoID')->references('id')->on('auto');
         });
     }

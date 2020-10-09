@@ -22,7 +22,7 @@ class CreateKarticaTable extends Migration
 
             $table->unsignedBigInteger('korisnikID');
 
-            $table->foreign('korisnikID')->references('id')->on('users');
+            $table->foreign('korisnikID')->references('id')->on('users')->onDelete('cascade');
         });
     }
 

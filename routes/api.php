@@ -33,3 +33,4 @@ Route::post('/vozila/dodaj', 'VehicleController@store');
 
 //Driver
 Route::post('vozaci/dodaj', 'DriverController@store');
+Route::get('vozaci/{korisnik_id}', 'DriverController@index');

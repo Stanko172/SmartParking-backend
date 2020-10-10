@@ -21,7 +21,7 @@ class NapraviTablicuRezervacija extends Migration
             $table->dateTime('vrijeme_rezervacije', 0);
 
             $table->foreign('parking_mjesto_id')->references('id')->on('parking_mjesto');
-            $table->foreign('vozac_id')->references('id')->on('vozac');
+            $table->foreign('vozac_id')->references('id')->on('vozac')->onDelete('cascade');
         });
     }
 

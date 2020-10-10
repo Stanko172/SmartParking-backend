@@ -17,6 +17,8 @@ class VozacTableSeeder extends Seeder
                 'id' => "$i",
                 'korisnikID' => rand(1, 20),
                 'autoID' => rand(1, 50),
+                "created_at" => date("Y-m-d") . ' ' . date("h:i:s"),
+                "updated_at" => date("Y-m-d") . ' ' . date("h:i:s"),
             ]);
         }
     }

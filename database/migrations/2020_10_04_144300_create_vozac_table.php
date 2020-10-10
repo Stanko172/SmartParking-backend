@@ -18,6 +18,7 @@ class CreateVozacTable extends Migration
 
             $table->unsignedBigInteger('korisnikID');
             $table->unsignedBigInteger('autoID');
+            $table->timestamps();
 
             $table->foreign('korisnikID')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('autoID')->references('id')->on('auto');

@@ -30,3 +30,6 @@ Route::put('korisnik/uredi/{korisnik_id}', 'UserController@update');
 
 //Vehicle
 Route::post('/vozila/dodaj', 'VehicleController@store');
+
+//Driver
+Route::post('vozaci/dodaj', 'DriverController@store');

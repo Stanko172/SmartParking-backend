@@ -19,13 +19,11 @@ class DriverController extends Controller
     {
         $drivers = Driver::where('korisnikID', $korisnikID)->get();
 
-        $new_drivers = [];
         $drivers_array = [];
 
         foreach($drivers as $driver){
             $car = Auto::where('id', $driver->autoID)->get()->first();
             $driver["car"] = $car;
-            $new_drivers["driver"] = $driver;
 
             $drivers_array[] = $driver;
         }

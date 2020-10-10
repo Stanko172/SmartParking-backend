@@ -17,6 +17,7 @@ class CreateAutoTable extends Migration
             $table->id();
             $table->string('naziv');
             $table->string('registracija');
+            $table->timestamps();
 
             $table->unsignedBigInteger('proizvodacID');
 

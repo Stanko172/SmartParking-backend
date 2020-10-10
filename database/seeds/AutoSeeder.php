@@ -64,7 +64,9 @@ class AutoSeeder extends Seeder
             DB::table('auto')->insert([
                 "naziv" => array_keys($vehicles)[$rand_number],
                 "proizvodacID" => array_values($vehicles)[$rand_number],
-                "registracija" => chr(rand(65,90)) . rand(1,99) . "-" . chr(rand(65,90)) . "-" . rand(1,999)
+                "registracija" => chr(rand(65,90)) . rand(1,99) . "-" . chr(rand(65,90)) . "-" . rand(1,999),
+                "created_at" => date("Y-m-d") . ' ' . date("h:i:s"),
+                "updated_at" => date("Y-m-d") . ' ' . date("h:i:s"),
             ]);
         }
     }

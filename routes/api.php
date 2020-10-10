@@ -27,3 +27,6 @@ Route::get('/korisnici', 'UserController@index');
 Route::get('korisnik/{korisnik_id}', 'UserController@show');
 Route::delete('korisnik/izbrisi/{korisnik_id}', 'UserController@destroy');
 Route::put('korisnik/uredi/{korisnik_id}', 'UserController@update');
+
+//Vehicle
+Route::post('/vozila/dodaj', 'VehicleController@store');

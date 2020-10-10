@@ -104,6 +104,9 @@ class DriverController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $driver = Driver::find($id);
+
+        $driver->delete();
+        return response()->json(null, 204);
     }
 }

@@ -35,3 +35,8 @@ Route::post('/vozila/dodaj', 'VehicleController@store');
 Route::post('vozaci/dodaj', 'DriverController@store');
 Route::get('vozaci/{korisnik_id}', 'DriverController@index');
 Route::delete('vozaci/izbrisi/{korisnik_id}', 'DriverController@destroy');
+
+//Reservation
+Route::get('/rezervacija/{korisnik_id}', 'RezervacijaController@index');
+Route::post('rezervacija/dodaj', 'RezervacijaController@store');
+Route::delete('rezervacija/izbrisi/{id}','RezervacijaController@destroy');

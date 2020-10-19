@@ -5,9 +5,8 @@ namespace App\Http\Controllers;
 use App\Rezervacija;
 use App\Driver;
 use App\Auto;
-use Illuminate\Http\Request;
-use App\Http\Controllers\DriverController;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Http\Request;
 
 class RezervacijaController extends Controller
 {
@@ -37,7 +36,7 @@ class RezervacijaController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create(Request $request)
+    public function create()
     {
         //
     }

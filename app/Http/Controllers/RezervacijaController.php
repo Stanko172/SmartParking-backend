@@ -17,6 +17,7 @@ class RezervacijaController extends Controller
      */
     public function index($korisnikID)
     {
+        //mislim da je ovo dobro, ali pogledat jos sa stankom :P
         $drivers = Driver::where('korisnikID', $korisnikID)->get();
 
         $rezervacija_array = [];
